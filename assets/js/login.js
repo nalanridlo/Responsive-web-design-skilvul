@@ -1,12 +1,12 @@
     
-    // //hidden password function 1
+    //hidden password function 1
     // const passwordInput = document.getElementById('passwordInput'); // id dari input password
     // const showHide = document.getElementById('showHide'); // id span showHide dalam input group password
 
     // passwordInput.type = 'password'; // set type input password menjadi password
     // showHide.innerHTML = '<i class="fa fa-eye">'; // masukan icon eye dalam icon bootstrap 5
     // showHide.style.cursor = 'pointer'; // ubah cursor menjadi pointer
-    // // jadi ketika span di hover maka cursornya berubah pointer
+    // jadi ketika span di hover maka cursornya berubah pointer
 
     // showHide.addEventListener('click', () => {
     // // ketika span diclick
@@ -21,14 +21,14 @@
     //     }
     // });
 
-    // //hidden confirm password 2
+    //hidden confirm password 2
     // const konfirmasiPassword = document.getElementById('konfirmasiPassword'); // id dari input password
     // const showHidePassword = document.getElementById('showHidePassword'); // id span showHide dalam input group password
 
     // konfirmasiPassword.type = 'password'; // set type input password menjadi password
     // showHidePassword.innerHTML = '<i class="fa fa-eye">'; // masukan icon eye dalam icon bootstrap 5
     // showHidePassword.style.cursor = 'pointer'; // ubah cursor menjadi pointer
-    // // jadi ketika span di hover maka cursornya berubah pointer
+    // jadi ketika span di hover maka cursornya berubah pointer
 
     // showHidePassword.addEventListener('click', () => {
     // // ketika span diclick
@@ -71,3 +71,4 @@ fetch('data.json')
   });
 })
 .catch(error => console.error(error));
+

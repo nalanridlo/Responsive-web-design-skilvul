@@ -45,30 +45,69 @@
 
 
 
-    // fetch data from JSON file
-fetch('data.json')
-.then(response => response.json())
-.then(data => {
-  const loginForm = document.getElementById('loginForm');
+//     // fetch data from JSON file
+// fetch('data.json')
+// .then(response => response.json())
+// .then(data => {
+//   const loginForm = document.getElementById('loginForm');
   
 
-  loginForm.addEventListener('submit', e => {
-    e.preventDefault(); // prevent default form submit behavior
+//   loginForm.addEventListener('submit', e => {
+//     e.preventDefault(); // prevent default form submit behavior
 
-    const email = loginForm.elements.email.value;
-    const password = loginForm.elements.password.value;
+//     const email = loginForm.elements.email.value;
+//     const password = loginForm.elements.password.value;
 
-    // find user with matching username and password
-    const user = data.users.find(user => user.email === email && user.password === password);
+//     // find user with matching username and password
+//     const user = data.users.find(user => user.email === email && user.password === password);
 
-    if (user) {
-      // alert(`Welcome, ${user.name}!`);
-      // loginForm.reset();
-      window.location.replace("index.html");
+//     if (user) {
+//       // alert(`Welcome, ${user.name}!`);
+//       // loginForm.reset();
+//       window.location.replace("index.html");
+//     } else {
+//       alert('Invalid username or password.');
+//     }
+//   });
+// })
+// .catch(error => console.error(error));
+
+
+
+
+//GET data login from fetch mock api
+// Path: script.js
+const loginForm = document.getElementById('loginForm');
+const loginBtn = document.getElementById('login-btn');
+
+
+loginForm.addEventListener('submit', event => {
+  event.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  fetch(`https://64532ddfe9ac46cedf1ede09.mockapi.io/userProfile`, {
+    method: 'GET'
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json();
     } else {
-      alert('Invalid username or password.');
+      console.error('Error getting login information:', response.statusText);
     }
-  });
-})
-.catch(error => console.error(error));
+  }).then(data => {
+    data.forEach(user => {
+      if (user.email === email && user.password === password) {
+        window.location.replace("index.html");
+        alert('Login successful');
+      } else {
+        console.error('Invalid username or password.')
+      }
+    });
+  })
+  .catch(error => console.error(error));
+}
+);
+
 

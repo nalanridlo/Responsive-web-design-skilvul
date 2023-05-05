@@ -1,45 +1,33 @@
-// fetch data from JSON file
-fetch('data.json')
-  .then(response => response.json())
-  .then(data => {
-    const registerForm = document.getElementById('signupForm');
+//POST data Register from fetch mock api
+// Path: register.js
+const registerForm = document.getElementById('signupForm');
+const registerBtn = document.getElementById('btndaftar');
 
-    registerForm.addEventListener('submit', e => {
-      e.preventDefault(); // prevent default form submit behavior
 
-      const nama = registerForm.elements.nama.value;
-      const email = registerForm.elements.email.value;
-      const password = registerForm.elements.password.value;
+registerForm.addEventListener('submit', event => {
+  event.preventDefault();
 
-      // check if username already exists
-      const existingUser = data.users.find(user => user.nama === nama);
+  const nama = document.getElementById('nama').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
-      if (existingUser) {
-        alert('Username already exists. Please choose a different one.');
-      } else {
-        // add new user to the array
-        const newUser = { nama, email, password };
-        data.users.push(newUser);
-
-        // save data to file
-        saveDataToFile(data);
-
-        alert('User registered successfully!');
-        registerForm.reset();
-      }
-    });
-  })
-  .catch(error => console.error(error));
-
-function saveDataToFile(data) {
-  const jsonData = JSON.stringify(data);
-
-  fetch('data.json', {
+  fetch(`https://64532ddfe9ac46cedf1ede09.mockapi.io/userProfile`, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
-    body: jsonData
+    body: JSON.stringify({ email: email, password: password, nama: nama })
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      console.error('Error posting register information:', response.statusText);
+    }
+  }).then(data => {
+    window.location.replace("login.html");
+    alert('Register successful');
   })
   .catch(error => console.error(error));
 }
+);

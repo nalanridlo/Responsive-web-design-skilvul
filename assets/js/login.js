@@ -99,7 +99,7 @@ loginForm.addEventListener('submit', event => {
   }).then(data => {
     data.forEach(user => {
       if (user.email === email && user.password === password) {
-        window.location.replace("index.html");
+        window.location.replace("landingpage.html");
         alert('Login successful');
       } else {
         console.error('Invalid username or password.')

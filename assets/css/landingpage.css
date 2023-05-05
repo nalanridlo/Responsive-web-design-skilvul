@@ -1,0 +1,383 @@
+body {
+    background-color: #f4f7f9;
+    position: relative;
+    height: 100vh;
+
+}
+
+.box {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #3366FF;
+    background-color: #3366FF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-align: justify;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.btn-read-more {
+    background-color: #FFFFFF;
+    color: #3366FF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-read-more:hover {
+    background-color: #3366FF;
+    color: #FFFFFF;
+    border: 1px solid #3366FF;
+}
+
+.col-4 {
+    display: flex;
+    align-items: center;
+    /* align vertical */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /* align vertical */
+}
+
+.col-6 {
+    text-align: left;
+    /* left align text */
+    margin-left: 20px;
+    /* adjust margin between image and text */
+}
+
+.btn-lihat {
+    background-color: #3366FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+
+}
+
+.btn-lihat:hover {
+    background-color: #ffffff;
+    color: #3366FF;
+    border: 1px solid #3366FF;
+}
+
+.col-md-12 {
+    text-align: center;
+    /* center align text */
+    margin: auto;
+    /* set margin auto to center element horizontally */
+}
+
+.carousel-inner {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.wok-profile {
+    width: 100%;
+    /* set width to 100% to ensure same size for both image and text */
+    max-width: 485px;
+    border-radius: 15%;
+
+
+    /* set max width to image width */
+}
+
+.wok-profile:hover {
+    filter: grayscale(0%);
+    transform: scale(1.01);
+}
+
+#slider {
+    background-image: url('img/Frame\ 133\ \(3\).png');
+    background-size: 100%;
+
+    background-position: center;
+
+}
+
+.card {
+    max-height: 340px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#lapor {
+    background-color: #f4f7f9;
+    padding: 60px 0;
+    text-align: center;
+
+}
+
+
+#lapor h6 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #404040;
+}
+
+
+#lapor p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: justify;
+
+}
+
+#lapor img {
+    max-width: 100%;
+}
+
+#lapor h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+#lapor input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+#lapor label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+#lapor button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #3366FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#lapor button:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+#lapor #warning {
+    color: red;
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #3366FF;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 1em 1em;
+}
+
+.row.primary {
+    display: grid;
+    grid-template-columns: 3fr 2fr 4fr;
+    align-items: stretch;
+}
+
+.column {
+    flex-basis: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+.column.about {
+    flex-basis: 25%;
+}
+
+.column.about img {
+    vertical-align: middle;
+}
+
+.column.link ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.column.link li {
+    margin-bottom: 5px;
+}
+
+.column.link a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.column.link a:hover {
+    text-decoration: underline;
+}
+
+.column.subscribe h3 {
+    margin-top: 0;
+}
+
+.column.subscribe img {
+    vertical-align: middle;
+}
+
+.profile-card {
+    width: 350px;
+
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    position: relative;
+    margin: auto;
+    background: rgba(255, 255, 255, 1);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: inherit;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    border: 0;
+}
+
+.profile-card header {
+    display: block;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 30px 0 20px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.profile-card header:before {
+    content: "";
+    position: absolute;
+    background: url('http://ali.shahab.pk/blur.php?img=http://ali.shahab.pk/ali-shahab.jpg&x=60') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+.profile-card header:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 100%);
+}
+
+.profile-card header img {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 200px;
+    /*border: 1px solid rgba(255,255,255,.5);*/
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1), 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.profile-card header h1 {
+    font-weight: 200;
+    font-size: 36px;
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #006BBA;
+    letter-spacing: -3px;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-card header h2 {
+    font-size: 13px;
+    color: #BFBFBF;
+    letter-spacing: .5px;
+    margin: 0;
+    padding: 0;
+}

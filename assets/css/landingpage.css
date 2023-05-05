@@ -381,3 +381,28 @@ img {
     margin: 0;
     padding: 0;
 }
+
+.footer__copyright {
+    background: #404040;
+}
+
+.footer__copyright .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__copyright .container p {
+    padding: 10px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}

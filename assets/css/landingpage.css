@@ -5,6 +5,18 @@ body {
 
 }
 
+nav {
+    background-color: #FFFFFF;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
 .box {
     width: 100%;
     padding: 20px;

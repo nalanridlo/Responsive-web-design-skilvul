@@ -25,7 +25,7 @@ registerForm.addEventListener('submit', event => {
       console.error('Error posting register information:', response.statusText);
     }
   }).then(data => {
-    window.location.replace("login.html");
+    window.location.replace("index.html");
     alert('Register successful');
   })
   .catch(error => console.error(error));

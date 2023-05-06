@@ -24,31 +24,37 @@
 <body>
   <section id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/budi.png" alt="Buddy Logo" width="50" height="30"
-            class="d-inline-block align-middle mr-2">
-          <h4 class="font-weight-bold d-inline-block align-middle">Buddy</h4>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+              Buddy
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto mx-auto">
-            <a class="nav-link active" href="#home">Beranda</a>
-            <a class="nav-link" href="#about">Tentang Kami</a>
-            <a class="nav-link" href="#artikel">Artikel</a>
-            <a class="nav-link" href="#lapor">Pelaporan</a>
-
-          </div>
-          <div class="navbar-nav ml-auto">
-            <div class="btn-group" role="group">
-              <a class="btn btn-outline-primary mr-3" href="#">Masuk</a>
-              <a class="btn btn-primary" href="#">Daftar</a>
-            </div>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/landingpage.html">Beranda</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="/tentangKami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/pelaporan.html">Pelaporan</a>
+            </li>              
+          
+          </ul>
+          <ul class="navbar-nav">
+              <a class="text-decoration-none" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+              
+                </a>
+          </ul>
         </div>
       </div>
     </nav>

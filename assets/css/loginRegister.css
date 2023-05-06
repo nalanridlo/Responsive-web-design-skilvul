@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 800px;
+    height: 550px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container .kiri {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .kiri img {
+    width: 300px;
+}
+
+.container .kanan {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 400px;
+    height: 600px;
+    background-color: #f6f9ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.container .kanan .buddy {
+    /* margin-top: 40px; */
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .kanan .buddy img {
+    margin-right: 15px;
+    width: 40px;
+}
+
+.container .kanan .buddy span {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.container .kanan .judul h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 36px;
+}
+.container .kanan .judul p{
+    font-size: 12px;
+}
+.container .kanan .judul a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.container .kanan .judul a:hover {
+    text-decoration: underline;
+}
+
+.container .kanan .form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .kanan .form form .box-password {
+    position: relative;
+}
+
+.container .kanan .form form .box-password span i {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+
+.container .kanan .form form label.email,
+.container .kanan .form form label.nama,
+.container .kanan .form form label.konPassword,
+.container .kanan .form form label.password {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.container .kanan .form form span i {
+    cursor: pointer;
+}
+
+.container .kanan .form form button {
+    margin-top: 25px;
+    height: 30px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container .kiri {
+        display: none;
+    }
+
+    .container .kanan {
+        width: 350px;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        padding: 20px;
+    }
+    .container .kiri {
+        display: none;
+    }
+
+    .container .kanan {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 30px;
+    }
+
+    .container .kiri {
+        display: none;
+    }
+
+    .container .kanan {
+        padding: 20px;
+    }
+}
+
+

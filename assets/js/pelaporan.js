@@ -1,8 +1,8 @@
 // login
 let name = localStorage.getItem('name')
-let profile = document.getElementById('name__profile')
+// let profile = document.getElementById('name__profile')
 
-profile.innerText = name;
+// profile.innerText = name;
 
 let formPelaporan = document.getElementById('formPelaporan')
 let modall = document.getElementById('exampleModal')

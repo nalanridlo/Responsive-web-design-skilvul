@@ -2,9 +2,20 @@
   font-family: 'Inter', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
+nav {
+  background-color: #FFFFFF;
+}
 
 .nav-item .active {
   color: #3366FF !important;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .banner {

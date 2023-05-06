@@ -1,9 +1,19 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
 main {
     background-color: #F6F9FF;
 }
 
 nav {
     background-color: #FFFFFF;
+}
+
+/* ubah warna navbar dengan class active  */
+nav .navbar-nav .nav-item .nav-link.active {
+    color: #3366FF;
 }
 
 .navbar-brand {

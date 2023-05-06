@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <link rel="stylesheet" href="assets/css/tentangKami.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/landingpage.css">
 
@@ -37,20 +42,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/landingpage.html">Beranda</a>
+              <a class="nav-link active" aria-current="page" href="/landingpage.html">Beranda</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link active" href="/tentangKami.html">Tentang Kami</a>
+              <a class="nav-link" href="/tentangKami.html">Tentang Kami</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#">Pelaporan</a>
+              <a class="nav-link" href="/pelaporan.html">Pelaporan</a>
             </li>              
           
           </ul>
           <ul class="navbar-nav">
               <a class="text-decoration-none" href="#">
-                  Ikin Sugiharto
-                  <img src="assets/images/Badges.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+              
                 </a>
           </ul>
         </div>
@@ -65,9 +73,9 @@
           <p>#LawanBullying</p>
           <h1>Jangan Takut!</h1>
           <h1>Ayo Laporkan Bullying</h1>
-          <p>Komisi Perlindungan Anak Indonesia (KPAI) menerima setidaknya 37.381 laporan perundungan dalam kurun waktu
+          <p class="description">Komisi Perlindungan Anak Indonesia (KPAI) menerima setidaknya 37.381 laporan perundungan dalam kurun waktu
             2011 hingga 2019. Dari jumlah tersebut,2.473 kasus diduga terjadi di dunia pendidikan.</p>
-          <a href="#" class="btn-lihat">Daftar Sekarang</a>
+          
         </div>
         <div class="col-md-6 mt-5">
           <img src="assets/images/orang.png" class="wok-profile w-485">
@@ -109,10 +117,11 @@
       <div class="row ">
         <div class="box">
           <h1>Apa itu Buddy</h1>
-          <p>Buddy merupakan platform edukasi untuk membantu kalian dalam meningkatkan kesadaran</p>
-          <p>serta kepedulian
-            terhadap kasus bullying di dunia pendidikan terutama di Indonesia.</p>
-          <button class="btn-read-more">Baca Selengkapnya</button>
+          <p class="text-center">Buddy merupakan platform edukasi untuk membantu kalian dalam meningkatkan kesadaran <br>
+          serta kepedulian terhadap kasus bullying di dunia pendidikan terutama di Indonesia. </p>
+            <a href="/comingsoon.html">
+              <button class="btn-read-more">Baca Selengkapnya</button>
+            </a>
         </div>
       </div>
     </div>
@@ -123,17 +132,34 @@
       <div class="row ">
         <div class="col-md-12">
           <h1>Bersama Buddy mari kita memerangi bullying!</h1>
-          <h6> Ayo tingkatakan pengetahuan kamu mengenai</h6>
-          <h6>dampak dan akibat dari bullying</h6>
+          <p class="secondary-heading"> Ayo tingkatakan pengetahuan kamu mengenai
+          <br> dampak dan akibat dari bullying</p>
         </div>
-        <div class="col-6 mt-5">
+        <!-- <div class="col-6 mt-5">
           <img src="assets/images/laptop.png" class="wok-profile w-485">
         </div>
         <div class="col-5">
           <h1>Artikel</h1>
-          <p>Kami menyediakan informasi dan bacaan yang cocok untuk sobat buddy meningkatkan pengetahuan mengenai
+          <p class="description">Kami menyediakan informasi dan bacaan yang cocok untuk sobat buddy meningkatkan pengetahuan mengenai
             dampak dan akibat dari bullying</p>
-          <button class="btn-lihat">Baca Selengkapnya</button>
+            <a href="/comingsoon.html">
+
+              <button class="btn-lihat">Baca Selengkapnya</button>
+            </a>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/images/laptop.png" class="wok-profile w-485 mb-3">
+        </div>
+        <div class="col-md-6">
+          <h1>Artikel</h1>
+          <p class="description">Kami menyediakan informasi dan bacaan yang cocok untuk sobat buddy meningkatkan pengetahuan mengenai
+            dampak dan akibat dari bullying</p>
+            <a href="/comingsoon.html">
+
+              <button class="btn-lihat">Baca Selengkapnya</button>
+            </a>
         </div>
       </div>
     </div>
@@ -160,7 +186,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-3">
                     <div class="card">
                       <img src="assets/images/1 (2).png" alt="" class="card-img-top">
                       <div class="card-body text-center">
@@ -169,7 +195,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-3">
                     <div class="card">
                       <img src="assets/images/2 (2).png" alt="" class="card-img-top">
                       <div class="card-body text-center">
@@ -178,7 +204,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 mb-3">
                     <div class="card">
                       <img src="assets/images/3.png" alt="" class="card-img-top">
                       <div class="card-body text-center">
@@ -208,26 +234,36 @@
     </div>
   </section>
 
-
-
-
   <section id="lapor">
     <div class="container">
       <div class="row">
         <div class="col-md-12 mt-5">
           <h1>Jangan Diam! Jangan Takut!</h1>
-          <p class="text-center">Segera laporkan apabila sobat Buddy melihat</p>
-          <p class="text-center"> ataupun menjadi korban Bullying</p>
+          <p class="text-center secondary-heading">Segera laporkan apabila sobat Buddy melihat
+            <br> ataupun menjadi korban Bullying</p>
         </div>
-        <div class="col-6">
+        <!-- <div class="col-6">
           <img src="assets/images/adm.png" class="wok-profile w-485">
         </div>
         <div class="col-5">
           <h1>Ayo lapor</h1>
-          <p>Kami menyediakan fitur pelaporan untuk membantu sobat buddy kalau tahu temanmu menjadi korban
+          <p class="description">Kami menyediakan fitur pelaporan untuk membantu sobat buddy kalau tahu temanmu menjadi korban
             bullying,langsung laporkan disini.</p>
-          <a class="nav-link" href="#form">
+          <a class="nav-link" href="/pelaporan.html">
             <button class="btn-lihat">Buat Laporan</button></a>
+        </div> -->
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/images/adm.png" class="wok-profile w-485">
+        </div>
+        <div class="col-md-6">
+          <h1>Ayo lapor</h1>
+          <p class="description">Kami menyediakan fitur pelaporan untuk membantu sobat buddy kalau tahu temanmu menjadi korban
+            bullying,langsung laporkan disini.</p>
+          <a class="nav-link" href="/pelaporan.html">
+            <button class="btn-lihat">Buat Laporan</button></a>
+        </div>
         </div>
       </div>
     </div>
@@ -265,7 +301,6 @@
         </div>
       </div>
     </div>
-
   </footer>
   <section class="footer__copyright">
     <div class="container">
